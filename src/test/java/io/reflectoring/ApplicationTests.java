@@ -9,7 +9,9 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 @SpringBootTest(properties = {
         "spring.jpa.hibernate.ddl-auto=create-drop",
         "spring.liquibase.enabled=false",
-        "spring.flyway.enabled=false"
+        "spring.flyway.enabled=false",
+        "debug=true",
+        "spring.main.allow-bean-definition-overriding=true"
 })
 class ApplicationTests {
 
